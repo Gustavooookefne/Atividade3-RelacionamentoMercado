@@ -24,7 +24,7 @@ public class Produto {
     private double preco;
 
     @ManyToOne
-    @JoinColumn(name = "nome_cadegoria")
+    @JoinColumn(name = "idCategoria")
     private Categoria categoria;
 
     public Produto(String nome, double preco, Long aLong) {

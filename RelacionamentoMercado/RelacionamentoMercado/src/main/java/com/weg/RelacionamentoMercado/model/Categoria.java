@@ -5,6 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Data
 @AllArgsConstructor
@@ -17,6 +20,9 @@ public class Categoria {
 
     @Column(name = "nome_Categoria",nullable = false)
     private String nomeCategoria;
+
+    @OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL)
+    private List<Produto> produtos = new ArrayList<>();
 
     public Categoria(String s) {
     }
