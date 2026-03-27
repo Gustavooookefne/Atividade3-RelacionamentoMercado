@@ -29,4 +29,7 @@ public class Produto {
 
     public Produto(String nome, double preco, Long aLong) {
     }
+
+    public void setCategoria(Long aLong) {
+    }
 }
