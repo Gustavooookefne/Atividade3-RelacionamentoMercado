@@ -17,4 +17,7 @@ public class Categoria {
 
     @Column(name = "nome_Categoria",nullable = false)
     private String nomeCategoria;
+
+    public Categoria(String s) {
+    }
 }
