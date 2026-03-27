@@ -1,4 +1,10 @@
 package com.weg.RelacionamentoMercado.Dto.PedidosDto;
 
-public class PedidoResponseDto {
+import java.util.UUID;
+
+public record PedidoResponseDto (
+        UUID id,
+        String nome,
+        double preco
+) {
 }

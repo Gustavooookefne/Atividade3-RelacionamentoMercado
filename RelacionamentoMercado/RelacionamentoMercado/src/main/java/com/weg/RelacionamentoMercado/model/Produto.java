@@ -23,6 +23,8 @@ public class Produto {
     @Column(name = "Preço_produto", nullable = false)
     private double preco;
 
-    Categoria categoria;
+    @ManyToOne
+    @JoinColumn(name = "nome_cadegoria")
+    private Categoria categoria;
 
 }
