@@ -27,4 +27,6 @@ public class Produto {
     @JoinColumn(name = "nome_cadegoria")
     private Categoria categoria;
 
+    public Produto(String nome, double preco, Long aLong) {
+    }
 }

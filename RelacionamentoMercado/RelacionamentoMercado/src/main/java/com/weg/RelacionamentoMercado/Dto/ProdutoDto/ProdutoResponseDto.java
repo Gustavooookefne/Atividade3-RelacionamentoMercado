@@ -1,8 +1,8 @@
-package com.weg.RelacionamentoMercado.Dto.PedidosDto;
+package com.weg.RelacionamentoMercado.Dto.ProdutoDto;
 
 import java.util.UUID;
 
-public record PedidoResponseDto (
+public record ProdutoResponseDto(
         UUID id,
         String nome,
         double preco
