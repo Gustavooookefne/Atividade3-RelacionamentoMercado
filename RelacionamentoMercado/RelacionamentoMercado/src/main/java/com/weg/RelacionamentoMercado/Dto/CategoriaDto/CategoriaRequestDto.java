@@ -1,4 +1,6 @@
 package com.weg.RelacionamentoMercado.Dto.CategoriaDto;
 
-public class CategoriaRequestDto {
+public record CategoriaRequestDto (
+        String nomeCategoria
+) {
 }
