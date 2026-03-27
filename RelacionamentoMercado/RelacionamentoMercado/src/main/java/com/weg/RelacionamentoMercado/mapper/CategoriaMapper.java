@@ -3,7 +3,9 @@ package com.weg.RelacionamentoMercado.mapper;
 import com.weg.RelacionamentoMercado.Dto.CategoriaDto.CategoriaRequestDto;
 import com.weg.RelacionamentoMercado.Dto.CategoriaDto.CategoriaResponseDto;
 import com.weg.RelacionamentoMercado.model.Categoria;
+import org.springframework.stereotype.Component;
 
+@Component
 public class CategoriaMapper {
 
     public Categoria paraEntidades (CategoriaRequestDto requestDto) {
