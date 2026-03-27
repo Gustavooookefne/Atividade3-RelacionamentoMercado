@@ -1,4 +1,9 @@
 package com.weg.RelacionamentoMercado.repository;
 
-public class ProdutoRepository {
+import com.weg.RelacionamentoMercado.model.Produto;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.UUID;
+
+public interface ProdutoRepository extends JpaRepository<Produto, UUID> {
 }
